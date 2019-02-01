@@ -1,0 +1,14 @@
+<!--pages/profile/profile.wxml-->
+<container>
+  <view class='login'>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindgetUserInfo">登录</button>
+    <view class='login-mesg' wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+  <button bindtap='bindtapcomment' class='comment'>我的评论</button>
+  <button bindtap='bindtapcollect' class='collect'>我的收藏</button>
+  <button bindtap='bindtapabout' class='about'>关于我们</button>
+  <button bindtap='bindtapexit' class='exit'>退出登录</button>
+</container>

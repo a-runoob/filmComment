@@ -1,0 +1,11 @@
+<view class='title'>影片库</view>
+<view style='text-align:center;margin-top:30rpx;'>{{msg}}</view>
+<view class="container">
+   <view wx:for="{{movies}}" wx:for-item="movie" wx:key="movie" >
+      <view class='films' bindtap='bindtapfilmmesg' data-index="{{index}}">
+        <image class='film-icon' src='{{movie.filmIcon}}'></image>
+        <text class='name'>{{movie.filmName}}({{movie.filmTime}})</text>
+        <text class='score'>{{movie.score}}(分)</text>
+      </view>
+   </view>
+</view>

@@ -1,0 +1,4 @@
+<view class="container">
+  <text class='title'>关于我们</text>
+  <view class='text'>此影评小程序用python,django开发后台，sqlite3为数据库，小程序开发前台，可以查询电影，收藏电影，评论等功能。</view>
+</view>

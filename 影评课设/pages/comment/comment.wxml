@@ -1,0 +1,35 @@
+<view class="container">
+  <view class='top'>
+    <image src="{{filmIcon}}" class='film-icon'></image>
+    <view class='film-mesg'>
+     <text class='filmname'>{{filmName}} {{score}}(分）</text>
+     <text class='actor'>主演:{{actor}}</text>
+     <button class='like' wx:if="{{!like}}" bindtap='bindFilmLike'>收藏</button>
+     <button class='like' wx:else bindtap='bindFilmDislike' >😍(已收藏)</button>
+    </view>
+  </view>
+  <view class='brief-mesg'>
+    <view class='brief-title'>简介:</view>
+    <view class='brief'>{{brief}}</view>
+  </view>
+  <view class='addcomment'>
+    <view class='comment-title'>写影评</view>
+    <form  bindsubmit='bindSubmit'>
+      <textarea name="textarea" class='comment' placeholder='留下你的点评吧...' placeholder-class='placeholder' minlength="1" maxlength="300" bindinput='bindinput'><text class='currentcount'>{{currentlen|0}}/300</text>
+      </textarea>
+      
+      <button class='submit' form-type='submit'>提交</button>
+    </form>   
+  </view>
+  <view class='allcomments' >
+    <text class='comment-title'>全部评论</text>
+    <view  wx:for="{{comments}}" wx:for-item="item" wx:for-index="index" wx:key="{{item}}">
+      <view class='comments'>{{index+1}}. {{item.comment}}<text class="user">----{{item.user}}</text></view>
+    </view>
+  </view>
+
+
+  
+  
+
+</view>

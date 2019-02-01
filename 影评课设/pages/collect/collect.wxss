@@ -1,0 +1,37 @@
+.title{
+  text-align: center;
+  font-size: 45rpx;
+  color:black;
+  font-weight: bolder;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+.collect-films{
+  width:290rpx;
+  height: 460rpx;
+  border:1rpx solid green;
+  position: relative;
+  margin:40rpx 41rpx 10rpx 41rpx;
+}
+.film-icon{
+  width: 290rpx;
+  height:380rpx;
+}
+.name{
+    position:absolute;
+    top:380rpx;
+    left:2rpx;
+    font-size: 30rpx;
+
+}
+.score{
+    position:absolute;
+    top:415rpx;
+    left:2rpx;
+    font-size: 30rpx;
+}

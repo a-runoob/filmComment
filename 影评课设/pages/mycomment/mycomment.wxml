@@ -1,0 +1,11 @@
+<view class='title' hidden="{{!mycommentLength}}">您暂无评论</view>
+<view class='title' hidden="{{mycommentLength}}">全部评论</view>
+<view class="container">
+  <view wx:for="{{mycomments}}" wx:for-item="mycomment" wx:key="mycomment">
+    <view class='comment-mesg'>
+      <view class='filmname'>《{{mycomment.filmName}}》<text class="user">----{{mycomment.user}}</text></view>
+      
+      <view class='comment'>{{mycomment.comment}}</view>
+    </view>
+  </view>
+</view>

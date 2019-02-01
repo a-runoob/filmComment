@@ -1,0 +1,75 @@
+/**index.wxss**/
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.search{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+/* .searchform{
+
+} */
+.input{
+  border:1rpx solid gray;
+  border-radius: 15rpx;
+  font-size: 25rppx;
+  width: 500rpx;
+  height: 70rpx;
+  position: absolute;
+  left: 40rpx;
+  top:15rpx;
+  text-indent:60rpx;
+  padding-left:40rpx;
+  box-sizing: border-box;
+}
+.btnsearch{
+   position: absolute;
+   right: -27rpx;
+   top:15rpx;
+   width: 150rpx;
+   height: 70rpx;
+   line-height: 70rpx;
+   background-color: #fff;
+}
+.title{
+  margin-top:93rpx;
+  text-align: center;
+  font-size: 45rpx;
+  color:black;
+  font-weight: bolder;
+}
+.films{
+  width:290rpx;
+  height: 460rpx;
+  border:1rpx solid green;
+
+  position: relative;
+  margin:10rpx 41rpx;
+}
+.film-icon{
+  width: 290rpx;
+  height:380rpx;
+}
+.name{
+    position:absolute;
+    top:380rpx;
+    left:2rpx;
+    font-size: 29rpx;
+
+}
+
+.score{
+    position:absolute;
+    top:415rpx;
+    left:2rpx;
+    font-size: 30rpx;
+
+
+
+}

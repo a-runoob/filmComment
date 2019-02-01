@@ -1,0 +1,11 @@
+<view class='title' hidden="{{filmLength}}">您暂无收藏电影</view>
+<view class='title' hidden="{{!filmLength}}">收藏列表</view>
+<view class="container">
+      <view wx:for="{{collects}}" wx:for-item="collect" wx:key="collect">
+        <view class='collect-films' bindtap="bindtapfilmmesg" data-index="{{index}}">
+          <image class='film-icon' src='{{collect.filmIcon}}'></image>
+          <text class='name'>{{collect.filmName}}</text>
+          <text class='score'>{{collect.score}}</text>
+        </view>
+      </view>
+</view>

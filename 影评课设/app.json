@@ -1,0 +1,48 @@
+{
+  "pages":[
+
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/collect/collect",
+    "pages/profile/profile",
+    "pages/comment/comment",
+    "pages/mycomment/mycomment",
+    "pages/about/about",
+    "pages/search/search"
+
+  ],
+
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2aac5e",
+    "navigationBarTitleText": "微影评",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color": "#000",
+    "selectedColor":"#2aac5e",
+    "backgroundColor":"#fff",
+    "borderStyle":"black",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"电影",
+        "iconPath":"/img/movie.png",
+        "selectedIconPath":"/img/movie_select.png"
+
+      },
+      {
+        "pagePath": "pages/collect/collect",
+        "text": "收藏",
+        "iconPath": "/img/star.png",
+        "selectedIconPath": "/img/star_select.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "/img/my.png",
+        "selectedIconPath": "/img/my_select.png"
+      }
+    ]
+  }
+}
